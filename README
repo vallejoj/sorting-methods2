@@ -1,0 +1,36 @@
+README
+
+Welcome to the wild world of sorting, where you take things...and sort them!
+
+Sorting is an ancient art used since the beginning of time, 1951. With one of the
+most earliest sorting algorithms the bubble sort.
+
+Bubble sorting a simple yet pretty inefecient sorting method but
+really fun to bare witness to.
+
+Let's take a look at these numbers to show how bubble sorting works 8,7,3,6,9.
+
+The sorting begins is an ineffecient, simple and repeititve sorting method that starts
+with the first number and compares it to the number next to it. If the second number is
+lower then the first number the numbers switch, 7,8,3,6,9. Then we compare our initial first
+number with the next and swicht them if the next number is lower 7,3,8,6,9 and we do this till that
+first initial number finds its place and then we repeat again with the first number in the line until
+our numbers are comletely sorted.
+
+Next there is the quicksort algorithm one of the more effiecnet forms of soring. This method
+takes numbers and sort them by breaking them down based off one of the numbers of your choosing.
+Let's use these numbers again and get started 8,7,3,6,9.
+
+For the sake of simplicity we are going to break off 8 the first number and use that as our pivot(our comaparison number)
+From there we compare the rest of the numbers to the pivot and sort them left or right based on
+if they are higher or lower. We start from seven as we are going left to right.7 3,6| 8|9.Great!
+We have so far sorted half of our numbers. Next we create another pivot in our groupings using the 1st number.
+In this case we will use 7 and normally we would use 9 for the second grouping but you cant really sort just one number.
+Now going left to right we sort the next group into 3,6|7|8|9. Now we repeat this process for the next line and we
+finally have our sorted numbers 3|6|7|8|9|
+
+Next we have insertion. Insertion kinda works like bubble sort where we compare the first number
+to the second but the key difference being once the first numbers are compared they are put into
+their own group. With 8,7,3,6,9, 8 is compared to 7 and they switch and become linked, |7,8|. Then we compare
+3 to 8 and then 3 to 7 and they become linked 3|7|8. Then 6 compares to each number in our newly created
+list and it becomes 3|6|7|8, where we finally compare the list to our last number 9 and complete the sorting.
