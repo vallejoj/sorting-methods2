@@ -1,0 +1,20 @@
+INSERTION
+ Insertion  works like bubble sort where we compare the first number to the second but the key difference being once the first numbers are compared they are put into their own group. With 8,7,3,6,9, 8 is compared to 7 and they switch and become linked, |7,8|. Then we compare 3 to 8 and then 3 to 7 and they become linked 3|7|8. Then 6 compares to each number in our newly created list and it becomes 3|6|7|8, where we finally compare the list to our last number 9 and complete the sorting.
+
+ Pseudo-code
+
+ insert(array){
+ (create loop array.length[i]{
+ create temp variable
+ create variable j= i-1(previous variable)
+ (new loop while temp>=0 && array[j]>temp){
+ set next elem to equal elem[j]
+ j
+ set next elem= tmp
+ }
+ return array
+ }
+
+
+ Best Case Scenario: An array that is sorted. O(n)
+ Worst Case: Array in reverse order. O(n2)
