@@ -34,3 +34,55 @@ to the second but the key difference being once the first numbers are compared t
 their own group. With 8,7,3,6,9, 8 is compared to 7 and they switch and become linked, |7,8|. Then we compare
 3 to 8 and then 3 to 7 and they become linked 3|7|8. Then 6 compares to each number in our newly created
 list and it becomes 3|6|7|8, where we finally compare the list to our last number 9 and complete the sorting.
+
+Merge sort or the "Divide and Conquer" algorithm. We start out with our numbers and then divide the total number in half
+and seperate them and we do this until all our numbers are in their own lists. Once that is done we start doing the p
+process in reverse, merging them together. As we merge them we order them from lowest to highest till there is only
+one list left.
+
+Finally let's take a look at the selection sort. Sorting by selection we take a look at the numbers from left
+to right, once we have found the lowest number we select it and move it to the first position in our line. Then we
+move through the line again til we find the second smallest number and shift that to the second position. We do
+this until our entire line is sorted.
+
+Quick Sort Pseudo Code
+Bubble sort
+
+Fn bubbleSort(array)
+(create two loops one to control the second loop){
+(second loop to go thru numbers){
+if statement(1st number bigger then 2nd number then swap)
+temp variable= 1st number
+1st number=2nd number
+2nd number = temp
+}
+}
+
+Fn quickSort(array){
+  pivot[]
+  left[]
+  rigth[]
+(make loop comparing to pivot)
+  if (less then pivot ){
+    sort left
+  }else{
+    sort right
+}
+}
+
+Merge(array){
+(loop until all arrays are one if array length<2){
+mid= array.length/2
+left= 0-mid
+right= mid-length
+}
+
+fn merge(array){
+empty array=[]
+(loop left!==0 && right!==0){
+ if(left[]<right[])
+ push left then right
+}else{
+push right then left
+}
+}

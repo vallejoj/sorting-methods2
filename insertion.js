@@ -6,11 +6,13 @@ function insert(num){
     var temp= num[i];
     var j = i - 1;
     while(j>=0 && num[j]>temp){
-      console.log(i,j)         
+
       num[j + 1] = num[j]
       j--
+    num[j + 1] = temp;
+  
     }
-     num[j + 1] = temp;
+
   }
 
   return num
