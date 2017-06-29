@@ -85,3 +85,41 @@ push right then left
 }
 
 Selection Sort
+
+selection(array){
+(loop[i] array.length){
+min=i
+(loop checking array to loo for lowest number j=i+1){
+  if (min items less then j items){
+    make min= j
+  }
+}
+create swaping using temp variables.
+
+}
+return array
+}
+
+Bubble Sort
+Best case scenario: If numbers are sorted in order. O(n)
+Worst case: If numbers are unsorted and there are high numbers in the start and
+low numbers at the end of an array and it is a large array. O(n2)
+
+Insertion
+Best Case Scenario: An array that is sorted. O(n)
+Worst Case: Array in reverse order.O(n2)
+
+Quicksort:
+Best case scenario: If pivot is in the middle.	O(n log(n))
+
+Worst case: If pivot is one of the higher numbers or the lower.
+	O(n2)
+
+Selection:
+Selection sorting performs the same across the board. O(n2)
+
+Merge:
+Best case scenario: Takes about as half as many iterations as its worst case.
+O(n log(n))
+Worst case: Merge does 39% fewer then quicksort's average sorting.
+O(n log(n))

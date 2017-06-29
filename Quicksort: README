@@ -1,0 +1,32 @@
+QUICKSORT
+
+The quick-sort algorithm is one of the more efficient forms of sorting. This method
+takes numbers and sorts them by breaking them down based off one of the
+numbers of your choosing. Let's use these numbers and get started 8,7,3,6,9.
+
+Quicksort uses what's called a pivot number, basically any number of your choosing
+from our array, to make it easy let's just use the number on the left. Once we choose
+our pivot number we sort the rest of the number from left to right into new arrays
+based off of that pivot point. Our two new array are 7,3,6 and 9 with our old array
+of 8 still existing in the middle. Then we repeat the process with a new pivot for
+each new array until the array is sorted.
+
+Psuedo-code
+Quicks-sort:
+quickSort(array){
+  pivot[]
+  left[]
+  right[]
+(make loop comparing to pivot)
+  if (less then pivot ){
+    sort left
+  }else{
+    sort right
+}
+}
+
+
+Best case scenario: If pivot is in the middle.	O(n log(n))
+
+Worst case: If pivot is one of the higher numbers or the lower.
+	O(n2)

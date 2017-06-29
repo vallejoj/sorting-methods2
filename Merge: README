@@ -1,0 +1,28 @@
+MERGE
+
+
+Merge sort or the "Divide and Conquer" algorithm starts out with our array of numbers and then divides the length in half and separates them. We do this until all our numbers are in their own lists. Once that is done we start doing the process in reverse, merging them together. As we merge them we order them from lowest to highest till there is only one list left.
+
+Pseudo-code
+Merge Sort
+sort(array){
+(loop until all arrays are one if array length<2){
+mid= array.length/2
+left= slice 0-mid
+right= slice mid-length
+}
+
+fn merge(array){
+empty array=[]
+(loop left!==0 && right!==0){
+ if(left[]<right[])
+ push left then right
+}else{
+push right then left
+}
+}
+
+Best case scenario: Takes about as half as many iterations as its worst case.
+O(n log(n))
+Worst case: Merge does 39% fewer then quicksort's average sorting.
+O(n log(n))
