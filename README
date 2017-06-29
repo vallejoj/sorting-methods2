@@ -5,50 +5,32 @@ Welcome to the wild world of sorting, where you take things...and sort them!
 Sorting is an ancient art used since the beginning of time, 1951. With one of the
 most earliest sorting algorithms the bubble sort.
 
-Bubble sorting a simple yet pretty inefecient sorting method but
+Bubble sorting a simple yet pretty inefficient sorting method but
 really fun to bare witness to.
 
 Let's take a look at these numbers to show how bubble sorting works 8,7,3,6,9.
 
-The sorting begins is an ineffecient, simple and repeititve sorting method that starts
+The sorting begins is an inefficient, simple and repetitive sorting method that starts
 with the first number and compares it to the number next to it. If the second number is
 lower then the first number the numbers switch, 7,8,3,6,9. Then we compare our initial first
-number with the next and swicht them if the next number is lower 7,3,8,6,9 and we do this till that
-first initial number finds its place and then we repeat again with the first number in the line until
-our numbers are comletely sorted.
+number with the next and switch them if the next number is lower 7,3,8,6,9 and we do this till that first initial number finds its place and then we repeat again with the first number in the line until our numbers are completely sorted.
 
-Next there is the quicksort algorithm one of the more effiecnet forms of soring. This method
-takes numbers and sort them by breaking them down based off one of the numbers of your choosing.
-Let's use these numbers again and get started 8,7,3,6,9.
+Next there is the quick-sort algorithm one of the more efficient forms of sorting. This method
+takes numbers and sort them by breaking them down based off one of the numbers of your choosing. Let's use these numbers again and get started 8,7,3,6,9.
 
-For the sake of simplicity we are going to break off 8 the first number and use that as our pivot(our comaparison number)
-From there we compare the rest of the numbers to the pivot and sort them left or right based on
-if they are higher or lower. We start from seven as we are going left to right.7 3,6| 8|9.Great!
-We have so far sorted half of our numbers. Next we create another pivot in our groupings using the 1st number.
-In this case we will use 7 and normally we would use 9 for the second grouping but you cant really sort just one number.
-Now going left to right we sort the next group into 3,6|7|8|9. Now we repeat this process for the next line and we
-finally have our sorted numbers 3|6|7|8|9|
+For the sake of simplicity we are going to break off 8 the first number and use that as our pivot(our comparison number). From there we compare the rest of the numbers to the pivot and sort them left or right based on if they are higher or lower. We start from seven as we are going left to right.7 3,6| 8|9.Great! We have so far sorted half of our numbers. Next we create another pivot in our groupings using the 1st number.In this case we will use 7 and normally we would use 9 for the second grouping but you cant really sort just one number. Now going left to right we sort the next group into 3,6|7|8|9. Now we repeat this process for the next line and we finally have our sorted numbers 3|6|7|8|9|
 
-Next we have insertion. Insertion kinda works like bubble sort where we compare the first number
-to the second but the key difference being once the first numbers are compared they are put into
-their own group. With 8,7,3,6,9, 8 is compared to 7 and they switch and become linked, |7,8|. Then we compare
-3 to 8 and then 3 to 7 and they become linked 3|7|8. Then 6 compares to each number in our newly created
-list and it becomes 3|6|7|8, where we finally compare the list to our last number 9 and complete the sorting.
+Next we have insertion. Insertion kinda works like bubble sort where we compare the first number to the second but the key difference being once the first numbers are compared they are put into their own group. With 8,7,3,6,9, 8 is compared to 7 and they switch and become linked, |7,8|. Then we compare3 to 8 and then 3 to 7 and they become linked 3|7|8. Then 6 compares to each number in our newly created list and it becomes 3|6|7|8, where we finally compare the list to our last number 9 and complete the sorting.
 
-Merge sort or the "Divide and Conquer" algorithm. We start out with our numbers and then divide the total number in half
-and seperate them and we do this until all our numbers are in their own lists. Once that is done we start doing the p
-process in reverse, merging them together. As we merge them we order them from lowest to highest till there is only
-one list left.
+Merge sort or the "Divide and Conquer" algorithm. We start out with our numbers and then divide the total number in half and separate them and we do this until all our numbers are in their own lists. Once that is done we start doing the process in reverse, merging them together. As we merge them we order them from lowest to highest till there is only one list left.
 
-Finally let's take a look at the selection sort. Sorting by selection we take a look at the numbers from left
-to right, once we have found the lowest number we select it and move it to the first position in our line. Then we
-move through the line again til we find the second smallest number and shift that to the second position. We do
-this until our entire line is sorted.
+Finally let's take a look at the selection sort. Sorting by selection we take a look at the numbers from left to right, once we have found the lowest number we select it and move it to the first position in our line. Then we move through the line again until we find the second smallest number and shift that to the second position. We do this until our entire line is sorted.
 
 Quick Sort Pseudo Code
-Bubble sort
 
-Fn bubbleSort(array)
+Bubble sort:
+
+bubbleSort(array)
 (create two loops one to control the second loop){
 (second loop to go thru numbers){
 if statement(1st number bigger then 2nd number then swap)
@@ -58,10 +40,11 @@ temp variable= 1st number
 }
 }
 
-Fn quickSort(array){
+Quicks-sort:
+quickSort(array){
   pivot[]
   left[]
-  rigth[]
+  right[]
 (make loop comparing to pivot)
   if (less then pivot ){
     sort left
@@ -69,12 +52,26 @@ Fn quickSort(array){
     sort right
 }
 }
+Insertion
 
-Merge(array){
+insert(array){
+(create loop array.length[i]{
+create temp variable
+create variable j= i-1(previous variable)
+(new loop while temp>=0 && array[j]>temp){
+set next elem to equal elem[j]
+j
+set next elem= tmp
+}
+return array
+}
+
+Merge Sort
+sort(array){
 (loop until all arrays are one if array length<2){
 mid= array.length/2
-left= 0-mid
-right= mid-length
+left= slice 0-mid
+right= slice mid-length
 }
 
 fn merge(array){
@@ -86,3 +83,5 @@ empty array=[]
 push right then left
 }
 }
+
+Selection Sort
