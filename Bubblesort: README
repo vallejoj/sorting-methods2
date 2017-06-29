@@ -15,16 +15,7 @@ with the first number and compares it to the number next to it. If the second nu
 lower then the first number the numbers switch, 7,8,3,6,9. Then we compare our initial first
 number with the next and switch them if the next number is lower 7,3,8,6,9 and we do this till that first initial number finds its place and then we repeat again with the first number in the line until our numbers are completely sorted.
 
-
-
-Next we have insertion. Insertion kinda works like bubble sort where we compare the first number to the second but the key difference being once the first numbers are compared they are put into their own group. With 8,7,3,6,9, 8 is compared to 7 and they switch and become linked, |7,8|. Then we compare3 to 8 and then 3 to 7 and they become linked 3|7|8. Then 6 compares to each number in our newly created list and it becomes 3|6|7|8, where we finally compare the list to our last number 9 and complete the sorting.
-
-
-Finally let's take a look at the selection sort. Sorting by selection we take a look at the numbers from left to right, once we have found the lowest number we select it and move it to the first position in our line. Then we move through the line again until we find the second smallest number and shift that to the second position. We do this until our entire line is sorted.
-
-Quick Sort Pseudo Code
-
-Bubble sort:
+Pseudo-code
 
 bubbleSort(array)
 (create two loops one to control the second loop){
@@ -36,46 +27,6 @@ temp variable= 1st number
 }
 }
 
-Insertion
-
-insert(array){
-(create loop array.length[i]{
-create temp variable
-create variable j= i-1(previous variable)
-(new loop while temp>=0 && array[j]>temp){
-set next elem to equal elem[j]
-j
-set next elem= tmp
-}
-return array
-}
-
-Selection Sort
-
-selection(array){
-(loop[i] array.length){
-min=i
-(loop checking array to loo for lowest number j=i+1){
-  if (min items less then j items){
-    make min= j
-  }
-}
-create swaping using temp variables.
-
-}
-return array
-}
-
-Bubble Sort
 Best case scenario: If numbers are sorted in order. O(n)
 Worst case: If numbers are unsorted and there are high numbers in the start and
 low numbers at the end of an array and it is a large array. O(n2)
-
-Insertion
-Best Case Scenario: An array that is sorted. O(n)
-Worst Case: Array in reverse order.O(n2)
-
-
-
-Selection:
-Selection sorting performs the same across the board. O(n2)

@@ -1,0 +1,21 @@
+SELECTION
+
+Sorting by selection we take a look at the numbers from left to right, once we have found the lowest number we select it and move it to the first position in our line. Then we move through the line again until we find the second smallest number and shift that to the second position. We do this until our entire line is sorted.
+
+Pseudo-code
+selection(array){
+(loop[i] array.length){
+min=i
+(loop checking array to loo for lowest number j=i+1){
+  if (min items less then j items){
+    make min= j
+  }
+}
+create swaping using temp variables.
+
+}
+return array
+}
+
+
+Selection sorting performs the same across the board. O(n2)
